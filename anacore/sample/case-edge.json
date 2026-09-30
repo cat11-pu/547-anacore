@@ -1,0 +1,39 @@
+{
+  "case": "case-edge",
+  "query": {
+    "letters": "aeginnr",
+    "must_include": "",
+    "min_length": 3,
+    "max_length": 9,
+    "min_shared": 2,
+    "only_query_letters": false
+  },
+  "scoring": {
+    "relation_base": {
+      "anagram": 100,
+      "sub": 60,
+      "super": 40,
+      "partial": 15
+    },
+    "use_used_letters": true,
+    "weight_base": 0.0,
+    "weight_coverage": 70.0,
+    "weight_length": 5.0,
+    "tiebreak": ["used_desc", "relation_priority", "length_desc", "word_asc"]
+  },
+  "candidates": [
+    "earning",
+    "aginners",
+    "aria",
+    "atomic",
+    "agrarian",
+    "Gain",
+    "",
+    "gain",
+    "gain",
+    "rearranging",
+    "garnering",
+    "garden",
+    "toy"
+  ]
+}

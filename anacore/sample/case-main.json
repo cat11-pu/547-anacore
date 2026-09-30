@@ -1,0 +1,69 @@
+{
+  "case": "case-main",
+  "query": {
+    "letters": "aeginnr",
+    "must_include": "g",
+    "min_length": 3,
+    "max_length": 8,
+    "min_shared": 3,
+    "only_query_letters": true
+  },
+  "scoring": {
+    "relation_base": {
+      "anagram": 100,
+      "sub": 60,
+      "super": 40,
+      "partial": 15
+    },
+    "use_used_letters": true,
+    "weight_base": 1.0,
+    "weight_coverage": 70.0,
+    "weight_length": 5.0,
+    "tiebreak": [
+      "used_desc",
+      "relation_priority",
+      "length_desc",
+      "word_asc"
+    ]
+  },
+  "candidates": [
+    "earning",
+    "earing",
+    "grain",
+    "garden",
+    "gain",
+    "arrange",
+    "aginner",
+    "Gain",
+    "anger",
+    "aging",
+    "engrain",
+    "rearranging",
+    "garni",
+    "airing",
+    "grannie",
+    "gag",
+    "ageing",
+    "earn",
+    "nearing",
+    "gear",
+    "   ",
+    "ginner",
+    "again",
+    "orange",
+    "grin",
+    "agrarian",
+    "",
+    "gainer",
+    "age",
+    "gain",
+    "anearing",
+    "angering",
+    "arginine",
+    "enraging",
+    "ana",
+    "abandonment",
+    "rearranging",
+    "Gain"
+  ]
+}
